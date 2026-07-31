@@ -3,6 +3,7 @@ const LINKS = [
   { href: '#experiencia', label: 'Experiência' },
   { href: '#projetos', label: 'Projetos' },
   { href: '#skills', label: 'Skills' },
+  { href: '#educacao', label: 'Educação' },
   { href: '#contato', label: 'Contato' },
 ];
 

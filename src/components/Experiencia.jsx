@@ -1,8 +1,15 @@
 import { experiencias } from '../data/perfil';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 function Experiencia() {
+  const { ref, className } = useScrollReveal();
+
   return (
-    <section id="experiencia" className="py-24 px-6 max-w-5xl mx-auto border-t border-white/5">
+    <section
+      id="experiencia"
+      ref={ref}
+      className={`py-24 px-6 max-w-5xl mx-auto border-t border-white/5 ${className}`}
+    >
       <h2 className="font-serif text-3xl text-neutral-50 mb-2">Experiência</h2>
       <p className="text-neutral-500 mb-10">
         Interface entre negócio e tecnologia, ao longo da carreira.

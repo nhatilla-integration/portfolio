@@ -1,4 +1,5 @@
 import { perfil } from '../data/perfil';
+import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const CONTATOS = [
   { label: 'LinkedIn', href: (p) => p.linkedin },
@@ -7,8 +8,14 @@ const CONTATOS = [
 ];
 
 function Contato() {
+  const { ref, className } = useScrollReveal();
+
   return (
-    <section id="contato" className="py-24 px-6 max-w-5xl mx-auto border-t border-white/5">
+    <section
+      id="contato"
+      ref={ref}
+      className={`py-24 px-6 max-w-5xl mx-auto border-t border-white/5 ${className}`}
+    >
       <div className="flex flex-wrap gap-4">
         {CONTATOS.map(({ label, href }) => (
           <a
