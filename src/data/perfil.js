@@ -7,8 +7,10 @@ export const perfil = {
   linkedin: 'https://linkedin.com/in/nátilla-alves-teixeira-a39a98248',
   github: 'https://github.com/nhatilla-integration',
   email: 'nhatillaalvesteixeira@gmail.com',
-  disponibilidade: 'Aberta a oportunidades remotas ou internacionais',
+  disponibilidade: 'Aberta a Oportunidades',
   idiomas: 'Português (nativo) · Inglês (intermediário, em evolução para fluência)',
+  stackDestaque: ['React', 'Node.js', 'Java', 'Python'],
+  statusRotativo: ['pronta_para_um_novo_desafio', 'aprendendo_algo_novo_agora'],
 };
 
 export const experiencias = [
@@ -54,6 +56,12 @@ export const projetos = [
     stack: ['React', 'Tailwind CSS', 'Supabase'],
     demo: 'https://vizi-crm.vercel.app',
     github: 'https://github.com/nhatilla-integration/vizi-crm',
+    preview: {
+      type: 'video',
+      url: 'vizi-crm.vercel.app',
+      src: '/projetos/vizi-crm.mp4',
+      poster: '/projetos/vizi-crm.jpg',
+    },
   },
   {
     nome: 'Simulador de NFS-e',
@@ -62,6 +70,12 @@ export const projetos = [
     stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'MongoDB'],
     demo: null,
     github: 'https://github.com/nhatilla-integration/nfse-simulador',
+    preview: {
+      type: 'video',
+      url: 'nfse-simulador · docs (Swagger)',
+      src: '/projetos/nfse-simulador.mp4',
+      poster: '/projetos/nfse-simulador.jpg',
+    },
   },
   {
     nome: 'Vizi Imóveis',
@@ -71,6 +85,12 @@ export const projetos = [
     demo: 'https://gabionetta-imoveis.vercel.app',
     demoSenha: 'gabionetta2026',
     github: 'https://github.com/nhatilla-integration/vizi-imoveis',
+    preview: {
+      type: 'video',
+      url: 'gabionetta-imoveis.vercel.app',
+      src: '/projetos/vizi-imoveis.mp4',
+      poster: '/projetos/vizi-imoveis.jpg',
+    },
   },
   {
     nome: 'Vendas API',
@@ -79,7 +99,44 @@ export const projetos = [
     stack: ['Java', 'Spring Boot', 'PostgreSQL'],
     demo: null,
     github: 'https://github.com/nhatilla-integration/vendas-api',
+    preview: {
+      type: 'code',
+      filename: 'VendaController.java',
+      lines: [
+        '@RestController',
+        '@RequestMapping("/vendas")',
+        'public class VendaController {',
+        '',
+        '  @PostMapping',
+        '  public Venda criar(@RequestBody Venda venda) {',
+        '    return service.salvar(venda);',
+        '  }',
+        '}',
+      ],
+    },
   },
+];
+
+export const formacao = [
+  {
+    curso: 'Análise e Desenvolvimento de Sistemas',
+    instituicao: 'Universidade de São Francisco (USF)',
+    local: 'Campinas',
+    status: 'Em andamento',
+  },
+  {
+    curso: 'Técnico em Gestão da Qualidade',
+    instituicao: 'Notre Dame College',
+    local: 'Campinas',
+    status: 'Concluído',
+  },
+];
+
+export const certificacoes = [
+  { nome: 'Fundamentos AWS (EC2, S3, Lambda, Cloud)', instituicao: 'DIO' },
+  { nome: 'Versionamento de Código com Git e GitHub', instituicao: 'DIO' },
+  { nome: 'LGPD: Fundamentos da Lei Geral de Proteção de Dados', instituicao: 'Fundação Bradesco' },
+  { nome: 'Scrum e Kanban - Metodologias Ágeis', instituicao: 'Senac' },
 ];
 
 export const skills = {

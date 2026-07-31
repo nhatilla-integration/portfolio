@@ -1,6 +1,34 @@
-function ProjectCard({ projeto }) {
+import BrowserMockup from './BrowserMockup';
+import CodeWindow from './CodeWindow';
+import { highlightLine } from '../utils/highlightCode';
+import { useScrollReveal } from '../hooks/useScrollReveal';
+
+function ProjectCard({ projeto, index = 0 }) {
+  const { preview } = projeto;
+  const { ref, className, style } = useScrollReveal(index * 100);
+
   return (
-    <div className="border border-white/10 rounded-2xl p-6 hover:border-violet-400/40 transition-colors bg-white/[0.02]">
+    <div
+      ref={ref}
+      style={style}
+      className={`border border-white/10 rounded-2xl p-6 hover:border-violet-400/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30 transition-all bg-white/[0.02] ${className}`}
+    >
+      {preview?.type === 'video' && (
+        <BrowserMockup
+          url={preview.url}
+          src={preview.src}
+          poster={preview.poster}
+          className="mb-6"
+        />
+      )}
+      {preview?.type === 'code' && (
+        <CodeWindow
+          filename={preview.filename}
+          lines={preview.lines.map((line) => highlightLine(line))}
+          className="mb-6"
+        />
+      )}
+
       <h3 className="font-serif text-2xl text-neutral-50 mb-2">{projeto.nome}</h3>
       <p className="text-neutral-400 text-sm leading-relaxed mb-4">{projeto.descricao}</p>
 
