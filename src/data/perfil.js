@@ -1,6 +1,6 @@
 export const perfil = {
   nome: 'Nátilla Alves Teixeira',
-  titulo: 'Analista de Sistemas & Dev Full Stack',
+  titulo: 'Dev Full Stack & Analista de Sistemas',
   localizacao: 'Campinas, São Paulo',
   resumo:
     'Transito entre negócio e tecnologia: ao longo da minha carreira, venho traduzindo necessidades de cliente em requisitos técnicos, entre vendas, engenharia e integração de sistemas. Hoje aplico essa mesma leitura de problema para projetar e construir, do banco de dados à interface, as soluções que antes eu apenas especificava.',
@@ -9,41 +9,44 @@ export const perfil = {
   email: 'nhatillaalvesteixeira@gmail.com',
   disponibilidade: 'Aberta a Oportunidades',
   idiomas: 'Português (nativo) · Inglês (intermediário, em evolução para fluência)',
-  stackDestaque: ['React', 'Node.js', 'Java', 'Python'],
+  stackDestaque: ['React', 'Node.js', 'Java'],
   statusRotativo: ['pronta_para_um_novo_desafio', 'aprendendo_algo_novo_agora'],
 };
 
 export const experiencias = [
   {
-    cargo: 'Analista de Soluções Técnicas (Pre-Sales & Entrega)',
+    cargo: 'Analista de Integração de Sistemas (Implementação & Entrega)',
     empresa: 'AIoT Solution — Integradora de soluções de segurança, automação e IoT',
     local: 'Campinas, Brasil',
     periodo: 'Ago 2025 – Mar 2026',
     destaques: [
-      'Traduzi necessidades de cliente levantadas em reuniões de descoberta em requisitos técnicos para soluções de integração e IoT.',
-      'Avaliei tecnologias — sensores, gateways, protocolos como LoRaWAN, plataformas cloud — considerando viabilidade técnica, custo e integração com backends.',
-      'Atuei como ponte técnica entre Vendas, Engenharia e cliente em POC de infraestrutura urbana autônoma, do levantamento ao pós-venda.',
-      'Validei endpoints de APIs REST com Postman em integrações de sistemas IoT.',
+      'Traduzi requisitos de negócio em arquiteturas técnicas escaláveis para projetos de infraestrutura inteligente e automação.',
+      'Integrei sistemas utilizando protocolos de comunicação (LoRaWAN, MQTT, REST APIs, Wi-Fi, BLE).',
+      'Executei Provas de Conceito (PoC) e projetos-piloto, validando viabilidade técnica e alinhamento operacional.',
+      'Atuei como ponte entre vendas, engenharia e cliente, estruturando documentação técnica (diagramas de arquitetura, BOM).',
     ],
   },
   {
-    cargo: 'Consultora Técnica',
+    cargo: 'Consultora Técnica | Sistemas & Operações',
     empresa: 'Motocicletas Triumph',
     local: 'Campinas, Brasil',
     periodo: 'Abr 2023 – Nov 2024',
     destaques: [
-      'Diagnóstico e resolução de problemas, traduzindo demandas técnicas de clientes para as áreas responsáveis.',
-      'Levantamento e documentação estruturada de requisitos com rastreamento até a resolução.',
+      'Gerenciei sistemas e fluxos operacionais utilizando ERP (NBS) e plataformas em nuvem.',
+      'Atuei como ponte entre operações de negócio e sistemas técnicos, garantindo eficiência dos processos.',
+      'Realizei suporte técnico a clientes via CRM, resolvendo problemas e aprimorando fluxos de atendimento.',
+      'Apoiei auditorias e controle de qualidade, garantindo conformidade e rastreabilidade.',
     ],
   },
   {
-    cargo: 'Analista de Garantia e Documentação',
+    cargo: 'Analista de Garantia e Documentação | Processos & Sistemas',
     empresa: 'Grupo Germânica',
     local: 'Campinas, Brasil',
     periodo: 'Jul 2020 – Set 2022',
     destaques: [
-      'Análise e validação de dados de processos de garantia de veículos, garantindo qualidade e consistência das informações.',
-      'Implementação de fluxos de trabalho digitais em nuvem, reduzindo erros e retrabalho nos processos internos.',
+      'Criei e mantive dashboards e relatórios para acompanhamento de performance e KPIs operacionais.',
+      'Implementei fluxos de trabalho digitais e padronizei processos, melhorando organização de dados e eficiência.',
+      'Prestei suporte técnico a equipes internas e clientes, resolvendo problemas de sistema e operacionais.',
     ],
   },
 ];
@@ -52,7 +55,7 @@ export const projetos = [
   {
     nome: 'Vizi CRM',
     descricao:
-      'Camada analítica que identifica gargalos no funil comercial em tempo real, com Kanban de leads e métricas ao vivo.',
+      'Criado a partir de uma dor operacional real: falta de visibilidade do funil comercial. Funil de leads em Kanban, métricas ao vivo e integração com banco de dados via Supabase Realtime.',
     stack: ['React', 'Tailwind CSS', 'Supabase'],
     demo: 'https://vizi-crm.vercel.app',
     github: 'https://github.com/nhatilla-integration/vizi-crm',
@@ -66,7 +69,7 @@ export const projetos = [
   {
     nome: 'Simulador de NFS-e',
     descricao:
-      'API que simula o ciclo de emissão fiscal municipal, com arquitetura em camadas e modelagem híbrida PostgreSQL + MongoDB.',
+      'Projeto de estudo criado para entender na prática a relação entre PostgreSQL e MongoDB, usando emissão fiscal municipal (NFS-e) como estudo de caso. Arquitetura em camadas (controllers/services/models), validação com Zod, modelagem híbrida SQL/NoSQL e testes automatizados com Jest. API sem interface visual — veja a documentação Swagger no link de código-fonte.',
     stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'MongoDB'],
     demo: null,
     github: 'https://github.com/nhatilla-integration/nfse-simulador',
@@ -80,7 +83,7 @@ export const projetos = [
   {
     nome: 'Vizi Imóveis',
     descricao:
-      'Gestão de imóveis para aluguel: contratos, inquilinos, status automático de vencimento e histórico de manutenções.',
+      'Desenvolvido para uso real da minha irmã na gestão de locações; por segurança, o login de demonstração é fictício e independente das credenciais reais dela. Status automático de contratos, histórico de reparos e sincronização em tempo real.',
     stack: ['React', 'Tailwind CSS', 'Supabase'],
     demo: 'https://gabionetta-imoveis.vercel.app',
     demoSenha: 'gabionetta2026',
@@ -95,7 +98,7 @@ export const projetos = [
   {
     nome: 'Vendas API',
     descricao:
-      'API REST para cadastro e atualização de vendas, com autenticação e persistência em banco relacional.',
+      'Meu primeiro desafio técnico: API REST para cadastro e atualização de vendas, com autenticação e persistência em banco relacional. API backend sem interface — consumida via requisições REST (Postman/Insomnia).',
     stack: ['Java', 'Spring Boot', 'PostgreSQL'],
     demo: null,
     github: 'https://github.com/nhatilla-integration/vendas-api',
@@ -140,7 +143,7 @@ export const certificacoes = [
 ];
 
 export const skills = {
-  Linguagens: ['Python', 'Java', 'JavaScript', 'TypeScript', 'SQL'],
+  Linguagens: ['Java', 'JavaScript', 'TypeScript', 'SQL'],
   'Frontend': ['React', 'Tailwind CSS', 'HTML5', 'CSS3'],
   'Backend': ['Node.js / Express', 'Spring Boot', 'APIs REST'],
   'Dados & Cloud': ['PostgreSQL', 'MongoDB', 'Supabase', 'AWS (EC2, S3, Lambda)'],

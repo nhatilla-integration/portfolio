@@ -1,6 +1,5 @@
 import { skills } from '../data/perfil';
 import {
-  SiPython,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -20,7 +19,6 @@ import { FaJava, FaDatabase, FaNetworkWired, FaAws } from 'react-icons/fa';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const ICONS = {
-  Python: SiPython,
   Java: FaJava,
   JavaScript: SiJavascript,
   TypeScript: SiTypescript,
