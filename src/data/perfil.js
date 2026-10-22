@@ -130,7 +130,7 @@ export const formacao = [
     curso: 'Análise e Desenvolvimento de Sistemas',
     instituicao: 'Universidade de São Francisco (USF)',
     local: 'Campinas',
-    status: 'Em andamento',
+    status: 'Finalizando',
     emAndamento: true,
   },
   {
