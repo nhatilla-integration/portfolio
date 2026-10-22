@@ -81,7 +81,7 @@ const projetosEn = [
 export const projetos = pt.projetos.map((projeto, i) => ({ ...projeto, ...projetosEn[i] }));
 
 const formacaoEn = [
-  { curso: 'Systems Analysis and Development', status: 'Final stage' },
+  { curso: 'Systems Analysis and Development', status: 'Final year' },
   { curso: 'Quality Management Technician', status: 'Completed' },
 ];
 
