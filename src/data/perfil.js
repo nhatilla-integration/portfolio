@@ -161,10 +161,21 @@ export const curriculos = [
     titulo: 'Desenvolvedora Full Stack | Analista de Sistemas',
     descricao:
       'Currículo completo: experiência profissional em integração de sistemas, ERP e CRM, projetos próprios de desenvolvimento, tecnologias e formação.',
-    tag: 'Desenvolvimento e Análise de Sistemas',
+    tag: 'Em português',
+    idioma: 'pt',
     icone: 'cv',
     arquivo: '/curriculos/curriculo-natilla-alves.pdf',
     nomeDownload: 'Curriculo - Natilla Alves Teixeira.pdf',
+  },
+  {
+    titulo: 'Full Stack Developer | Systems Analyst',
+    descricao:
+      'Versão em inglês do currículo completo, para vagas e recrutadores internacionais.',
+    tag: 'Em inglês',
+    idioma: 'en',
+    icone: 'cv',
+    arquivo: '/curriculos/resume-natilla-alves.pdf',
+    nomeDownload: 'Resume - Natilla Alves Teixeira.pdf',
   },
 ];
 
@@ -207,7 +218,7 @@ export const ui = {
   },
   curriculos: {
     titulo: 'Currículo',
-    subtitulo: 'Minha trajetória completa em uma página, para baixar e consultar quando quiser.',
+    subtitulo: 'Minha trajetória completa em uma página, em português e em inglês.',
     baixar: 'Baixar PDF',
   },
 };

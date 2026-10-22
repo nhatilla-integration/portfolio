@@ -108,10 +108,13 @@ export const skills = {
 
 const curriculosEn = [
   {
-    titulo: 'Full Stack Developer | Systems Analyst',
+    descricao: 'Portuguese version of my complete résumé, for roles in Brazil.',
+    tag: 'In Portuguese',
+  },
+  {
     descricao:
       'Complete résumé: professional experience in systems integration, ERP and CRM, personal development projects, technologies and education.',
-    tag: 'Development and Systems Analysis',
+    tag: 'In English',
   },
 ];
 
@@ -156,7 +159,7 @@ export const ui = {
   },
   curriculos: {
     titulo: 'Résumé',
-    subtitulo: 'My full background on a single page. The résumé is written in Portuguese.',
+    subtitulo: 'My full background on a single page, in English and Portuguese.',
     baixar: 'Download PDF',
   },
 };

@@ -8,7 +8,10 @@ const ICONS = {
 
 function Curriculos() {
   const { ref, className } = useScrollReveal();
-  const { curriculos, ui } = useIdioma().conteudo;
+  const { idioma, conteudo } = useIdioma();
+  const { curriculos, ui } = conteudo;
+  // O currículo no idioma em que o site está aparece primeiro
+  const ordenados = [...curriculos].sort((a, b) => (b.idioma === idioma) - (a.idioma === idioma));
 
   return (
     <section
@@ -22,7 +25,7 @@ function Curriculos() {
       </p>
 
       <div className="border border-white/10 rounded-2xl divide-y divide-white/5 bg-white/[0.02]">
-        {curriculos.map((cv) => {
+        {ordenados.map((cv) => {
           const Icon = ICONS[cv.icone];
           return (
             <a
