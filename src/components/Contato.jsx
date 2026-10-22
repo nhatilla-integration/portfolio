@@ -1,5 +1,5 @@
-import { perfil } from '../data/perfil';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useIdioma } from '../hooks/useIdioma';
 
 const CONTATOS = [
   { label: 'LinkedIn', href: (p) => p.linkedin },
@@ -9,6 +9,7 @@ const CONTATOS = [
 
 function Contato() {
   const { ref, className } = useScrollReveal();
+  const { perfil } = useIdioma().conteudo;
 
   return (
     <section

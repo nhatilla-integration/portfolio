@@ -1,12 +1,14 @@
-import { perfil } from '../data/perfil';
+import { useIdioma } from '../hooks/useIdioma';
 import CodeWindow from './CodeWindow';
 
 function Hero() {
+  const { idioma, conteudo } = useIdioma();
+  const { perfil, ui } = conteudo;
   const stackList = perfil.stackDestaque.map((tech) => `"${tech}"`).join(', ');
   const codeLines = [
     'const dev = {',
-    `  nome: "${perfil.nome}",`,
-    `  cargo: "${perfil.titulo}",`,
+    `  ${ui.hero.chaveNome}: "${perfil.nome}",`,
+    `  ${ui.hero.chaveCargo}: "${perfil.titulo}",`,
     `  stack: [${stackList}],`,
   ];
   const rotatingLine = {
@@ -22,7 +24,7 @@ function Hero() {
           <p className="text-violet-400 text-sm tracking-[0.2em] uppercase mb-4">
             {perfil.localizacao}
           </p>
-          <h1 className="font-serif text-5xl md:text-6xl text-neutral-50 leading-tight mb-6">
+          <h1 translate="no" className="font-serif text-5xl md:text-6xl text-neutral-50 leading-tight mb-6">
             {perfil.nome}
           </h1>
           <p className="text-xl text-violet-200/90 mb-8">{perfil.titulo}</p>
@@ -37,18 +39,19 @@ function Hero() {
               href="#projetos"
               className="bg-violet-400 hover:bg-violet-300 transition-colors text-[#0b0a08] font-medium rounded-full px-6 py-3 text-sm"
             >
-              Ver projetos
+              {ui.hero.verProjetos}
             </a>
             <a
               href="#contato"
               className="border border-white/15 hover:border-violet-400/50 transition-colors text-neutral-200 rounded-full px-6 py-3 text-sm"
             >
-              Entrar em contato
+              {ui.hero.contato}
             </a>
           </div>
         </div>
 
         <CodeWindow
+          key={idioma}
           filename="sobre.js"
           lines={codeLines}
           rotatingLine={rotatingLine}

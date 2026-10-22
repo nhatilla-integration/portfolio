@@ -1,6 +1,6 @@
-import { curriculos } from '../data/perfil';
 import { LuCodeXml, LuWorkflow, LuDownload } from 'react-icons/lu';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useIdioma } from '../hooks/useIdioma';
 
 const ICONS = {
   dev: LuCodeXml,
@@ -9,6 +9,7 @@ const ICONS = {
 
 function Curriculos() {
   const { ref, className } = useScrollReveal();
+  const { curriculos, ui } = useIdioma().conteudo;
 
   return (
     <section
@@ -16,9 +17,9 @@ function Curriculos() {
       ref={ref}
       className={`py-24 px-6 max-w-5xl mx-auto border-t border-white/5 ${className}`}
     >
-      <h2 className="font-serif text-3xl text-neutral-50 mb-2">Currículos</h2>
+      <h2 className="font-serif text-3xl text-neutral-50 mb-2">{ui.curriculos.titulo}</h2>
       <p className="text-neutral-500 mb-10">
-        Duas versões, de acordo com a vaga: escolha a que faz mais sentido para você.
+        {ui.curriculos.subtitulo}
       </p>
 
       <div className="border border-white/10 rounded-2xl divide-y divide-white/5 bg-white/[0.02]">
@@ -26,7 +27,7 @@ function Curriculos() {
           const Icon = ICONS[cv.icone];
           return (
             <a
-              key={cv.titulo}
+              key={cv.arquivo}
               href={cv.arquivo}
               download={cv.nomeDownload}
               className="group flex items-start gap-5 p-6 hover:bg-white/[0.03] transition-colors first:rounded-t-2xl last:rounded-b-2xl"
@@ -43,7 +44,7 @@ function Curriculos() {
               </div>
               <span className="shrink-0 hidden sm:flex items-center gap-2 text-sm text-neutral-400 group-hover:text-violet-300 transition-colors mt-0.5">
                 <LuDownload />
-                Baixar PDF
+                {ui.curriculos.baixar}
               </span>
             </a>
           );

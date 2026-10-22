@@ -2,10 +2,12 @@ import BrowserMockup from './BrowserMockup';
 import CodeWindow from './CodeWindow';
 import { highlightLine } from '../utils/highlightCode';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useIdioma } from '../hooks/useIdioma';
 
 function ProjectCard({ projeto, index = 0 }) {
   const { preview } = projeto;
   const { ref, className, style } = useScrollReveal(index * 100);
+  const { ui } = useIdioma().conteudo;
 
   return (
     <div
@@ -29,10 +31,10 @@ function ProjectCard({ projeto, index = 0 }) {
         />
       )}
 
-      <h3 className="font-serif text-2xl text-neutral-50 mb-2">{projeto.nome}</h3>
+      <h3 translate="no" className="font-serif text-2xl text-neutral-50 mb-2">{projeto.nome}</h3>
       <p className="text-neutral-400 text-sm leading-relaxed mb-4">{projeto.descricao}</p>
 
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div translate="no" className="flex flex-wrap gap-2 mb-6">
         {projeto.stack.map((tech) => (
           <span
             key={tech}
@@ -51,7 +53,7 @@ function ProjectCard({ projeto, index = 0 }) {
             rel="noreferrer"
             className="text-violet-300 hover:text-violet-200 transition-colors"
           >
-            Ver demo →
+            {ui.projetos.verDemo}
           </a>
         )}
         <a
@@ -60,13 +62,13 @@ function ProjectCard({ projeto, index = 0 }) {
           rel="noreferrer"
           className="text-neutral-400 hover:text-neutral-200 transition-colors"
         >
-          Código-fonte →
+          {ui.projetos.codigoFonte}
         </a>
       </div>
 
       {projeto.demoSenha && (
         <p className="text-xs text-neutral-500">
-          Senha de acesso: <span className="text-neutral-300 font-mono">{projeto.demoSenha}</span>
+          {ui.projetos.senhaAcesso} <span className="text-neutral-300 font-mono">{projeto.demoSenha}</span>
         </p>
       )}
     </div>

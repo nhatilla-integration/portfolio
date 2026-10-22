@@ -1,8 +1,9 @@
-import { experiencias } from '../data/perfil';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useIdioma } from '../hooks/useIdioma';
 
 function Experiencia() {
   const { ref, className } = useScrollReveal();
+  const { experiencias, ui } = useIdioma().conteudo;
 
   return (
     <section
@@ -10,14 +11,14 @@ function Experiencia() {
       ref={ref}
       className={`py-24 px-6 max-w-5xl mx-auto border-t border-white/5 ${className}`}
     >
-      <h2 className="font-serif text-3xl text-neutral-50 mb-2">Experiência</h2>
+      <h2 className="font-serif text-3xl text-neutral-50 mb-2">{ui.experiencia.titulo}</h2>
       <p className="text-neutral-500 mb-10">
-        Interface entre negócio e tecnologia, ao longo da carreira.
+        {ui.experiencia.subtitulo}
       </p>
 
       <div className="flex flex-col gap-10">
         {experiencias.map((exp) => (
-          <div key={exp.cargo} className="grid md:grid-cols-[200px_1fr] gap-2 md:gap-8">
+          <div key={exp.periodo} className="grid md:grid-cols-[200px_1fr] gap-2 md:gap-8">
             <p className="text-violet-400 text-sm">{exp.periodo}</p>
 
             <div>

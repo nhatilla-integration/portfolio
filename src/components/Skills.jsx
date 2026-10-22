@@ -1,4 +1,3 @@
-import { skills } from '../data/perfil';
 import {
   SiJavascript,
   SiTypescript,
@@ -15,6 +14,7 @@ import {
 } from 'react-icons/si';
 import { FaJava, FaDatabase, FaNetworkWired } from 'react-icons/fa';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useIdioma } from '../hooks/useIdioma';
 
 const ICONS = {
   Java: FaJava,
@@ -26,6 +26,7 @@ const ICONS = {
   'Node.js': SiNodedotjs,
   'Spring Boot': SiSpringboot,
   'APIs REST': FaNetworkWired,
+  'REST APIs': FaNetworkWired,
   PostgreSQL: SiPostgresql,
   MongoDB: SiMongodb,
   Supabase: SiSupabase,
@@ -36,6 +37,7 @@ const ICONS = {
 
 function Skills() {
   const { ref, className } = useScrollReveal();
+  const { skills, ui } = useIdioma().conteudo;
 
   return (
     <section
@@ -43,7 +45,7 @@ function Skills() {
       ref={ref}
       className={`py-24 px-6 max-w-5xl mx-auto border-t border-white/5 ${className}`}
     >
-      <h2 className="font-serif text-3xl text-neutral-50 mb-10">Skills</h2>
+      <h2 className="font-serif text-3xl text-neutral-50 mb-10">{ui.skills.titulo}</h2>
 
       <div className="flex flex-col gap-10">
         {Object.entries(skills).map(([categoria, itens]) => (
@@ -62,7 +64,7 @@ function Skills() {
                     <span className="shrink-0 w-8 h-8 rounded-lg bg-[#C9A876]/10 border border-[#C9A876]/30 flex items-center justify-center text-[#C9A876] text-base">
                       {Icon && <Icon />}
                     </span>
-                    <span className="text-sm text-neutral-200">{item}</span>
+                    <span translate="no" className="text-sm text-neutral-200">{item}</span>
                   </div>
                 );
               })}

@@ -131,12 +131,14 @@ export const formacao = [
     instituicao: 'Universidade de São Francisco (USF)',
     local: 'Campinas',
     status: 'Em andamento',
+    emAndamento: true,
   },
   {
     curso: 'Técnico em Gestão da Qualidade',
     instituicao: 'Notre Dame College',
     local: 'Campinas',
     status: 'Concluído',
+    emAndamento: false,
   },
 ];
 
@@ -174,3 +176,47 @@ export const curriculos = [
     nomeDownload: 'Curriculo - Natilla Alves - Analista de Sistemas.pdf',
   },
 ];
+
+export const ui = {
+  tituloPagina: 'Nátilla Alves Teixeira — Dev Full Stack',
+  nav: {
+    sobre: 'Sobre',
+    experiencia: 'Experiência',
+    projetos: 'Projetos',
+    skills: 'Skills',
+    educacao: 'Educação',
+    curriculos: 'Currículos',
+    contato: 'Contato',
+  },
+  hero: {
+    verProjetos: 'Ver projetos',
+    contato: 'Entrar em contato',
+    chaveNome: 'nome',
+    chaveCargo: 'cargo',
+  },
+  experiencia: {
+    titulo: 'Experiência',
+    subtitulo: 'Interface entre negócio e tecnologia, ao longo da carreira.',
+  },
+  projetos: {
+    titulo: 'Projetos',
+    subtitulo: 'Onde a análise virou código: produtos construídos do zero, do design ao deploy.',
+    verDemo: 'Ver demo →',
+    codigoFonte: 'Código-fonte →',
+    senhaAcesso: 'Senha de acesso:',
+  },
+  skills: {
+    titulo: 'Skills',
+  },
+  educacao: {
+    titulo: 'Educação e Certificações',
+    subtitulo: 'Base formal e aprendizado contínuo sustentando a prática do dia a dia.',
+    formacao: 'Formação',
+    certificacoes: 'Certificações',
+  },
+  curriculos: {
+    titulo: 'Currículos',
+    subtitulo: 'Duas versões, de acordo com a vaga: escolha a que faz mais sentido para você.',
+    baixar: 'Baixar PDF',
+  },
+};

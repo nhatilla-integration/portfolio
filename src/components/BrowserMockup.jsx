@@ -7,7 +7,7 @@ function BrowserMockup({ url, src, poster, className = '' }) {
         <span className="w-3 h-3 rounded-full bg-red-500/70" />
         <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
         <span className="w-3 h-3 rounded-full bg-green-500/70" />
-        <span className="ml-2 flex-1 text-xs text-neutral-500 font-mono bg-white/5 rounded-full px-3 py-1 truncate">
+        <span translate="no" className="ml-2 flex-1 text-xs text-neutral-500 font-mono bg-white/5 rounded-full px-3 py-1 truncate">
           {url}
         </span>
       </div>
