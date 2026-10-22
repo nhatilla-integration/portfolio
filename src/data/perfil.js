@@ -21,7 +21,7 @@ export const experiencias = [
     periodo: 'Ago 2025 – Mar 2026',
     destaques: [
       'Traduzi requisitos de negócio em arquiteturas técnicas escaláveis para projetos de infraestrutura inteligente e automação.',
-      'Integrei sistemas utilizando protocolos de comunicação (LoRaWAN, MQTT, REST APIs, Wi-Fi, BLE).',
+      'Atuei na integração de sistemas (REST APIs, Wi-Fi, BLE) e estudei o protocolo LoRaWAN como base de conhecimento para projetos IoT.',
       'Executei Provas de Conceito (PoC) e projetos-piloto, validando viabilidade técnica e alinhamento operacional.',
       'Atuei como ponte entre vendas, engenharia e cliente, estruturando documentação técnica (diagramas de arquitetura, BOM).',
     ],
