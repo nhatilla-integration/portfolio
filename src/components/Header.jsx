@@ -4,6 +4,7 @@ const LINKS = [
   { href: '#projetos', label: 'Projetos' },
   { href: '#skills', label: 'Skills' },
   { href: '#educacao', label: 'Educação' },
+  { href: '#curriculos', label: 'Currículos' },
   { href: '#contato', label: 'Contato' },
 ];
 

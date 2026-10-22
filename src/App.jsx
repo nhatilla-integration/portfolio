@@ -4,6 +4,7 @@ import Experiencia from './components/Experiencia';
 import Projetos from './components/Projetos';
 import Skills from './components/Skills';
 import Educacao from './components/Educacao';
+import Curriculos from './components/Curriculos';
 import Contato from './components/Contato';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Projetos />
         <Skills />
         <Educacao />
+        <Curriculos />
         <Contato />
       </main>
     </div>

@@ -153,3 +153,24 @@ export const skills = {
   Dados: ['PostgreSQL', 'MongoDB', 'Supabase'],
   'Ferramentas': ['Git', 'GitHub', 'Docker'],
 };
+
+export const curriculos = [
+  {
+    titulo: 'Desenvolvimento de Software',
+    descricao:
+      'Currículo para Desenvolvedora Full Stack Júnior, com destaque para tecnologias, projetos próprios, GitHub e aplicações desenvolvidas.',
+    tag: 'Primeira oportunidade em desenvolvimento',
+    icone: 'dev',
+    arquivo: '/curriculos/curriculo-dev-fullstack.pdf',
+    nomeDownload: 'Curriculo - Natilla Alves - Desenvolvedora FullStack.pdf',
+  },
+  {
+    titulo: 'Análise de Sistemas e Integrações',
+    descricao:
+      'Currículo com foco em experiência profissional, requisitos, ERP, CRM, APIs, processos e interface entre negócio e tecnologia.',
+    tag: 'Experiência profissional',
+    icone: 'analise',
+    arquivo: '/curriculos/curriculo-analista-sistemas.pdf',
+    nomeDownload: 'Curriculo - Natilla Alves - Analista de Sistemas.pdf',
+  },
+];
