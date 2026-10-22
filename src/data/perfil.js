@@ -96,26 +96,31 @@ export const projetos = [
     },
   },
   {
-    nome: 'Vendas API',
+    nome: 'Vizi Vendas',
     descricao:
-      'Meu primeiro desafio técnico: API REST para cadastro e atualização de vendas, com autenticação e persistência em banco relacional. API backend sem interface — consumida via requisições REST (Postman/Insomnia).',
-    stack: ['Java', 'Spring Boot', 'PostgreSQL'],
-    demo: null,
-    github: 'https://github.com/nhatilla-integration/vendas-api',
+      'Ponto de venda (PDV) para pequenos comércios: vendas, estoque e caixa num só app, com papéis de gestor, funcionário e dono. Permissões reforçadas no banco via RLS, estoque derivado só de movimentações, trilha de auditoria imutável e PWA instalável para tablet.',
+    stack: ['React', 'TypeScript', 'Supabase'],
+    demo: 'https://pdv.vizicrm.com.br',
+    github: 'https://github.com/nhatilla-integration/vizi-pdv',
     preview: {
-      type: 'code',
-      filename: 'VendaController.java',
-      lines: [
-        '@RestController',
-        '@RequestMapping("/vendas")',
-        'public class VendaController {',
-        '',
-        '  @PostMapping',
-        '  public Venda criar(@RequestBody Venda venda) {',
-        '    return service.salvar(venda);',
-        '  }',
-        '}',
-      ],
+      type: 'video',
+      url: 'pdv.vizicrm.com.br',
+      src: '/projetos/vizi-pdv.mp4',
+      poster: '/projetos/vizi-pdv.jpg',
+    },
+  },
+  {
+    nome: 'Crédito.IA',
+    descricao:
+      'Agente de IA que analisa o crédito de empresas (PJ), compara as taxas com os benchmarks do Banco Central e sugere trocas de produtos para reduzir juros. Integra a API SGS do Banco Central e o Omie ERP, com análise gerada via Claude API e dashboard em estilo extrato bancário.',
+    stack: ['Node.js', 'TypeScript', 'Express', 'Claude API'],
+    demo: null,
+    github: 'https://github.com/nhatilla-integration/credito-ia',
+    preview: {
+      type: 'video',
+      url: 'credito-ia · dashboard',
+      src: '/projetos/credito-ia.mp4',
+      poster: '/projetos/credito-ia.jpg',
     },
   },
 ];
@@ -144,8 +149,7 @@ export const certificacoes = [
 
 export const skills = {
   Linguagens: ['Java', 'JavaScript', 'TypeScript', 'SQL'],
-  'Frontend': ['React', 'Tailwind CSS', 'HTML5', 'CSS3'],
-  'Backend': ['Node.js / Express', 'Spring Boot', 'APIs REST'],
-  'Dados & Cloud': ['PostgreSQL', 'MongoDB', 'Supabase', 'AWS (EC2, S3, Lambda)'],
+  'Frameworks e Backend': ['React', 'Spring Boot', 'Node.js', 'Tailwind', 'APIs REST'],
+  Dados: ['PostgreSQL', 'MongoDB', 'Supabase'],
   'Ferramentas': ['Git', 'GitHub', 'Docker'],
 };

@@ -4,8 +4,6 @@ import {
   SiTypescript,
   SiReact,
   SiTailwindcss,
-  SiHtml5,
-  SiCss,
   SiNodedotjs,
   SiSpringboot,
   SiPostgresql,
@@ -15,7 +13,7 @@ import {
   SiGithub,
   SiDocker,
 } from 'react-icons/si';
-import { FaJava, FaDatabase, FaNetworkWired, FaAws } from 'react-icons/fa';
+import { FaJava, FaDatabase, FaNetworkWired } from 'react-icons/fa';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const ICONS = {
@@ -24,16 +22,13 @@ const ICONS = {
   TypeScript: SiTypescript,
   SQL: FaDatabase,
   React: SiReact,
-  'Tailwind CSS': SiTailwindcss,
-  HTML5: SiHtml5,
-  CSS3: SiCss,
-  'Node.js / Express': SiNodedotjs,
+  Tailwind: SiTailwindcss,
+  'Node.js': SiNodedotjs,
   'Spring Boot': SiSpringboot,
   'APIs REST': FaNetworkWired,
   PostgreSQL: SiPostgresql,
   MongoDB: SiMongodb,
   Supabase: SiSupabase,
-  'AWS (EC2, S3, Lambda)': FaAws,
   Git: SiGit,
   GitHub: SiGithub,
   Docker: SiDocker,
