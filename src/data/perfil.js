@@ -3,7 +3,7 @@ export const perfil = {
   titulo: 'Dev Full Stack & Analista de Sistemas',
   localizacao: 'Campinas, São Paulo',
   resumo:
-    'Transito entre negócio e tecnologia: ao longo da minha carreira, venho traduzindo necessidades de cliente em requisitos técnicos, entre vendas, engenharia e integração de sistemas. Hoje aplico essa mesma leitura de problema para projetar e construir, do banco de dados à interface, as soluções que antes eu apenas especificava.',
+    'Atuo na interseção entre negócio e tecnologia, conectando necessidades operacionais a soluções técnicas. Minha experiência envolve análise de processos, integração de sistemas e colaboração entre áreas de negócio e equipes técnicas. Hoje, amplio essa atuação por meio do desenvolvimento de projetos próprios, aplicando conhecimentos em frontend, backend, APIs e bancos de dados para construir soluções de ponta a ponta.',
   linkedin: 'https://linkedin.com/in/nátilla-alves-teixeira-a39a98248',
   github: 'https://github.com/nhatilla-integration',
   email: 'nhatillaalvesteixeira@gmail.com',
