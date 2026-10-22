@@ -158,22 +158,13 @@ export const skills = {
 
 export const curriculos = [
   {
-    titulo: 'Desenvolvimento de Software',
+    titulo: 'Desenvolvedora Full Stack | Analista de Sistemas',
     descricao:
-      'Currículo para Desenvolvedora Full Stack Júnior, com destaque para tecnologias, projetos próprios, GitHub e aplicações desenvolvidas.',
-    tag: 'Primeira oportunidade em desenvolvimento',
-    icone: 'dev',
-    arquivo: '/curriculos/curriculo-dev-fullstack.pdf',
-    nomeDownload: 'Curriculo - Natilla Alves - Desenvolvedora FullStack.pdf',
-  },
-  {
-    titulo: 'Análise de Sistemas e Integrações',
-    descricao:
-      'Currículo com foco em experiência profissional, requisitos, ERP, CRM, APIs, processos e interface entre negócio e tecnologia.',
-    tag: 'Experiência profissional',
-    icone: 'analise',
-    arquivo: '/curriculos/curriculo-analista-sistemas.pdf',
-    nomeDownload: 'Curriculo - Natilla Alves - Analista de Sistemas.pdf',
+      'Currículo completo: experiência profissional em integração de sistemas, ERP e CRM, projetos próprios de desenvolvimento, tecnologias e formação.',
+    tag: 'Desenvolvimento e Análise de Sistemas',
+    icone: 'cv',
+    arquivo: '/curriculos/curriculo-natilla-alves.pdf',
+    nomeDownload: 'Curriculo - Natilla Alves Teixeira.pdf',
   },
 ];
 
@@ -185,7 +176,7 @@ export const ui = {
     projetos: 'Projetos',
     skills: 'Skills',
     educacao: 'Educação',
-    curriculos: 'Currículos',
+    curriculos: 'Currículo',
     contato: 'Contato',
   },
   hero: {
@@ -215,8 +206,8 @@ export const ui = {
     certificacoes: 'Certificações',
   },
   curriculos: {
-    titulo: 'Currículos',
-    subtitulo: 'Duas versões, de acordo com a vaga: escolha a que faz mais sentido para você.',
+    titulo: 'Currículo',
+    subtitulo: 'Minha trajetória completa em uma página, para baixar e consultar quando quiser.',
     baixar: 'Baixar PDF',
   },
 };

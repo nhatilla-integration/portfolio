@@ -108,16 +108,10 @@ export const skills = {
 
 const curriculosEn = [
   {
-    titulo: 'Software Development',
+    titulo: 'Full Stack Developer | Systems Analyst',
     descricao:
-      'Résumé for a Junior Full Stack Developer role, highlighting technologies, personal projects, GitHub and applications built.',
-    tag: 'First opportunity in development',
-  },
-  {
-    titulo: 'Systems Analysis & Integrations',
-    descricao:
-      'Résumé focused on professional experience, requirements, ERP, CRM, APIs, processes and the interface between business and technology.',
-    tag: 'Professional experience',
+      'Complete résumé: professional experience in systems integration, ERP and CRM, personal development projects, technologies and education.',
+    tag: 'Development and Systems Analysis',
   },
 ];
 
@@ -131,7 +125,7 @@ export const ui = {
     projetos: 'Projects',
     skills: 'Skills',
     educacao: 'Education',
-    curriculos: 'Résumés',
+    curriculos: 'Résumé',
     contato: 'Contact',
   },
   hero: {
@@ -161,8 +155,8 @@ export const ui = {
     certificacoes: 'Certifications',
   },
   curriculos: {
-    titulo: 'Résumés',
-    subtitulo: 'Two versions, depending on the role. Both résumés are written in Portuguese.',
+    titulo: 'Résumé',
+    subtitulo: 'My full background on a single page. The résumé is written in Portuguese.',
     baixar: 'Download PDF',
   },
 };

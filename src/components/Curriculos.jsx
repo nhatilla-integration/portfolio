@@ -1,10 +1,9 @@
-import { LuCodeXml, LuWorkflow, LuDownload } from 'react-icons/lu';
+import { LuFileText, LuDownload } from 'react-icons/lu';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useIdioma } from '../hooks/useIdioma';
 
 const ICONS = {
-  dev: LuCodeXml,
-  analise: LuWorkflow,
+  cv: LuFileText,
 };
 
 function Curriculos() {
