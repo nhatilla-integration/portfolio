@@ -121,7 +121,7 @@ const curriculosEn = [
 export const curriculos = pt.curriculos.map((cv, i) => ({ ...cv, ...curriculosEn[i] }));
 
 export const ui = {
-  tituloPagina: 'Nátilla Alves Teixeira — Full Stack Developer',
+  tituloPagina: 'Nátilla Alves Teixeira | Portfolio',
   nav: {
     sobre: 'About',
     experiencia: 'Experience',

@@ -180,7 +180,7 @@ export const curriculos = [
 ];
 
 export const ui = {
-  tituloPagina: 'Nátilla Alves Teixeira — Dev Full Stack',
+  tituloPagina: 'Nátilla Alves Teixeira | Portfólio',
   nav: {
     sobre: 'Sobre',
     experiencia: 'Experiência',
