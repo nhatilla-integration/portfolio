@@ -70,7 +70,7 @@ export const projetos = [
     nome: 'Simulador de NFS-e',
     descricao:
       'Projeto de estudo criado para entender na prática a relação entre PostgreSQL e MongoDB, usando emissão fiscal municipal (NFS-e) como estudo de caso. Arquitetura em camadas (controllers/services/models), validação com Zod, modelagem híbrida SQL/NoSQL e testes automatizados com Jest. API sem interface visual — veja a documentação Swagger no link de código-fonte.',
-    stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'MongoDB'],
+    stack: ['Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'MongoDB', 'Jest', 'Docker'],
     demo: null,
     github: 'https://github.com/nhatilla-integration/nfse-simulador',
     preview: {
@@ -84,7 +84,7 @@ export const projetos = [
     nome: 'Vizi Imóveis',
     descricao:
       'Desenvolvido para uso real da minha irmã na gestão de locações; por segurança, o login de demonstração é fictício e independente das credenciais reais dela. Status automático de contratos, histórico de reparos e sincronização em tempo real.',
-    stack: ['React', 'Tailwind CSS', 'Supabase'],
+    stack: ['React', 'JavaScript', 'Tailwind CSS', 'Supabase'],
     demo: 'https://gabionetta-imoveis.vercel.app',
     demoSenha: 'gabionetta2026',
     github: 'https://github.com/nhatilla-integration/vizi-imoveis',
@@ -99,7 +99,7 @@ export const projetos = [
     nome: 'Vizi Vendas',
     descricao:
       'Ponto de venda (PDV) para pequenos comércios: vendas, estoque e caixa num só app, com papéis de gestor, funcionário e dono. Permissões reforçadas no banco via RLS, estoque derivado só de movimentações, trilha de auditoria imutável e PWA instalável para tablet.',
-    stack: ['React', 'TypeScript', 'Supabase'],
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Vitest'],
     demo: 'https://pdv.vizicrm.com.br',
     github: 'https://github.com/nhatilla-integration/vizi-pdv',
     preview: {
