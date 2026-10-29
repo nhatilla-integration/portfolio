@@ -55,13 +55,13 @@ export const projetos = [
   {
     nome: 'Vizi CRM',
     descricao:
-      'Criado a partir de uma dor operacional real: falta de visibilidade do funil comercial. Funil de leads em Kanban, métricas ao vivo e integração com banco de dados via Supabase Realtime.',
-    stack: ['React', 'Tailwind CSS', 'Supabase'],
-    demo: 'https://vizi-crm.vercel.app',
+      'Criado a partir de uma dor operacional real: venda perdida por mensagem esquecida no WhatsApp. Funil de leads em Kanban e métricas em tempo real via Supabase Realtime. Passou por um redesign completo, de tema neon escuro para um visual claro e corporativo, com landing page e domínio próprios.',
+    stack: ['React', 'JavaScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Jest'],
+    demo: 'https://www.vizicrm.com.br',
     github: 'https://github.com/nhatilla-integration/vizi-crm',
     preview: {
       type: 'video',
-      url: 'vizi-crm.vercel.app',
+      url: 'vizicrm.com.br',
       src: '/projetos/vizi-crm.mp4',
       poster: '/projetos/vizi-crm.jpg',
     },

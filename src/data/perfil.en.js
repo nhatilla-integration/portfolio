@@ -57,7 +57,7 @@ export const experiencias = pt.experiencias.map((exp, i) => ({
 const projetosEn = [
   {
     descricao:
-      'Born from a real operational pain point: lack of visibility into the sales pipeline. Kanban lead pipeline, live metrics and database integration via Supabase Realtime.',
+      'Born from a real operational pain point: sales lost to forgotten WhatsApp messages. Kanban lead pipeline and real-time metrics via Supabase Realtime. Went through a full redesign, from a dark neon theme to a clean, corporate look, with its own landing page and custom domain.',
   },
   {
     nome: 'NFS-e Simulator',
