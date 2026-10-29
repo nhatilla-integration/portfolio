@@ -19,8 +19,19 @@ function Hero() {
 
   return (
     <section id="sobre" className="pt-40 pb-24 px-6 max-w-5xl mx-auto">
-      <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
-        <div>
+      <div className="grid lg:grid-cols-[1.1fr_1fr] gap-x-12 gap-y-10 lg:gap-y-0 items-center">
+        <div className="relative lg:col-start-2 lg:row-start-1 w-56 sm:w-64 lg:w-80 mx-auto lg:ml-4 lg:-mt-10">
+          <div className="absolute -inset-3 rounded-[2rem] bg-violet-500/20 blur-2xl" aria-hidden="true" />
+          <img
+            src="/foto-natilla.webp"
+            alt={perfil.nome}
+            width="480"
+            height="720"
+            className="relative aspect-[2/3] w-full rounded-3xl object-cover border border-white/10"
+          />
+        </div>
+
+        <div className="lg:col-start-1 lg:row-start-1 lg:row-span-2">
           <p className="text-violet-400 text-sm tracking-[0.2em] uppercase mb-4">
             {perfil.localizacao}
           </p>
@@ -57,6 +68,7 @@ function Hero() {
           rotatingLine={rotatingLine}
           suffixLines={['};']}
           typing
+          className="relative z-10 lg:col-start-2 lg:row-start-2 lg:mt-8"
         />
       </div>
     </section>
